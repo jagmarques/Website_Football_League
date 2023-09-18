@@ -1,0 +1,719 @@
+html 
+{
+  background-size: 100%;
+  padding-bottom: 15%;
+}
+
+body 
+{
+  margin: 0;
+  padding: 0;
+  font-family: Verdana;
+  color: black;
+  background-color: white; 
+  background-position: center center; 
+  background-repeat: no-repeat; 
+  background-size: 100% 100%;
+}
+
+#title1
+{
+  font-size: 1.1vw;
+  color: black; 
+}
+
+#title2
+{
+  font-size: 1vw;
+  color: green; 
+}
+
+#title3
+{
+  font-size: 1.5vw;
+  color: green; 
+}
+
+#title4
+{
+  font-size: 1.3vw;
+  color: white; 
+}
+
+p 
+{
+  font-size: 0.85vw;
+  text-align: justify;
+  text-justify: inter-word; 
+}
+
+a 
+{
+  text-decoration: none; 
+}
+
+/*---------------------------------------------HEADER---------------------------------------------*/
+#header 
+{
+  position: relative;
+  width: 100%;
+  padding-right:0vw;
+  padding-bottom: 2vw; 
+  padding-top: 0vw;
+}
+
+#header nav ul 
+{
+  margin: 0;
+  padding: 0;
+  list-style: none; 
+  padding-top: 5vw;
+}
+
+#header nav ul a 
+{
+  display: block;
+  padding: 1.1vw;
+  padding-left: 3vw;
+  padding-right: 3vw;
+  background-color: white;
+}
+
+#header nav ul li 
+{
+  position: relative;
+  float: right;
+}
+
+#header nav li a 
+{
+  color: black; 
+}
+
+#header nav li a:hover 
+{
+  color: white; 
+  background-color: black;
+}
+
+#logo
+{
+  padding-right: 14.3vw;
+}
+
+#logo img
+{
+  float:right;
+  padding-top: 3vw;
+  padding-left: 3vw;
+  width: 8.5%; 
+  height: 8.5%;
+}
+
+#dropdown-content 
+{
+    display: none;
+    position: absolute;
+    background-color: white;
+    width: 11.45vw;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+#dropdown:hover #dropdown-content 
+{
+  display: block;
+}
+
+/*---------------------------------------------CONTAINER------------------------------------------*/
+#container 
+{
+  display: block;
+  width: 70vw;
+  margin: 0 auto;
+  padding-top: 5vw;
+  color: black;
+}
+
+#firstbox
+{
+  display: block;
+  float: left;
+  background-color: white;
+  width: 60%;
+  padding: 0vw;
+  text-align: left;
+  text-decoration: none; 
+}
+
+#firstboxText
+{
+  float: left;
+  width: 90%;
+  padding-top: 0vw;
+  padding-left: 2vw;
+  padding-bottom: 2vw;
+  background-color: white; 
+}
+
+#firstbox nav ul
+{
+  padding: 0vw;
+  margin: 0vw;
+}
+
+#firstbox nav ul li
+{ 
+  list-style: none; 
+  float: left;
+  padding-bottom: 2vw;
+}
+
+#firstbox nav ul li a
+{
+  float: left;
+  padding-top: 1.1vw;
+  padding-bottom: 1.1vw;
+  padding-left: 4.91vw;
+  padding-right: 4.91vw;
+  color: green;
+}
+
+#firstbox nav ul li a:hover
+{
+  background-color: green;
+  color: white;
+}
+
+#lastbox
+{
+  float: right;
+  text-align: center;
+}
+
+#wrapper
+{
+  background: black;
+  opacity: 0.8;
+  padding-right: 6vw;
+  padding-left: 6vw;
+  padding-top: 2vw;
+  padding-bottom: 1.2vw;
+  color: white;
+}
+#wrapper a 
+{
+  color: white;
+  font-size: 0.85vw;
+}
+
+#wrapper p 
+{
+  text-align: center;
+}
+
+#user
+{
+  border-radius: 50%;
+  width: 8vw;
+}
+
+#calendar
+{
+  width: 20vw;
+  height: 20vw;
+  border-width: 0vw; 
+  float: right; 
+  padding-top: 2vw;
+}
+
+#kickoutPlayer
+{
+  background-color: red;
+  padding: 0.3vw; 
+  padding-left: 1vw; 
+  padding-right: 1vw;
+  float: left; 
+  color: white; 
+  border: 0.1vw solid red;
+  cursor: pointer;
+  text-align: left;
+  outline: none;
+  font-size: 1.1vw;
+}
+
+#addPlayer,
+#editContest,
+#newGame,
+#enrollTeam 
+{
+  background-color: green;
+  padding: 0.3vw; 
+  padding-left: 3vw; 
+  padding-right: 3vw;
+  float: right; 
+  color: white; 
+  border: 0.1vw solid green;
+  cursor: pointer;
+  text-align: left;
+  outline: none;
+  font-size: 1.1vw;
+}
+
+#addPlayer:hover,
+#editContest:hover,
+#newGame:hover,
+#enrollTeam:hover
+{
+  background-color: darkgreen;
+  border: 0.1vw solid darkgreen;
+  color: white;
+}
+
+#editContest
+{
+  background-color: darkgreen;
+  padding: 0.3vw; 
+  padding-left: 1vw; 
+  padding-right: 1vw;
+  float: right; 
+  color: white; 
+  border: 0.1vw solid darkgreen;
+  cursor: pointer;
+  text-align: left;
+  outline: none;
+  font-size: 1.1vw;
+}
+
+#contentTitle
+{
+  overflow: auto;
+  font-size: 1.2vw;
+  padding-top: 2vw;
+  color: black;
+  border-bottom: 0.15vw solid black;
+}
+
+#contentTitle p
+{
+  font-size: 0.85vw;
+}
+
+#manageButton
+{
+  background-color: orange;
+  padding: 0.3vw; 
+  padding-left: 1vw; 
+  padding-right: 1vw;
+  float: right; 
+  color: black; 
+  border: 0.1vw solid orange;
+  cursor: pointer;
+  text-align: left;
+  outline: none;
+  font-size: 1.1vw;
+}
+
+#manageButton:hover 
+{
+  background: darkorange;
+  border: 0.1vw solid darkorange;
+}
+
+#askReplacement,
+#beSusbstitute
+{
+  background-color: orange;
+  padding: 0.3vw; 
+  padding-left: 1vw; 
+  padding-right: 1vw;
+  float: right; 
+  color: black; 
+  border: 0.1vw solid orange;
+  cursor: pointer;
+  text-align: left;
+  outline: none;
+  font-size: 1.1vw;
+}
+
+#askReplacement:hover,
+#beSusbstitute:hover
+{
+  background: darkorange;
+  border: 0.1vw solid darkorange;
+}
+
+#goBack
+{
+  font-size: 1.1vw;
+  text-align: center;
+  width: 8vw;
+  padding-top: 0.8vw;
+  padding-bottom: 0.8vw;
+  color: red;
+  background: white; 
+  border: 0.1vw solid red;
+  cursor: pointer;
+}
+
+#goBackDiv
+{
+  float: right;
+  padding: 2vw;
+  padding-top: 0vw;
+}
+
+#checkResults,
+#createGame,
+#createTeam,
+#createContest
+{
+  font-size: 1vw;
+  text-align: center;
+  float: left;
+  font-size: 1vw;
+  width: 12vw;
+  padding-top: 0.85vw;
+  padding-bottom: 0.85vw;
+  cursor: pointer;
+  color: white;
+  background: green; 
+  border: 0.1vw solid green;
+  text-transform: uppercase;
+}
+
+#checkResults:hover,
+#createGame:hover,
+#createTeam:hover
+{
+  background: darkgreen;
+  border: 0.1vw solid darkgreen;
+}
+
+#generateGames
+{
+  font-size: 1vw;
+  text-align: center;
+  float: left;
+  font-size: 1vw;
+  width: 12vw;
+  padding-top: 0.85vw;
+  padding-bottom: 0.85vw;
+  cursor: pointer;
+  color: black;
+  background: orange; 
+  border: 0.1vw solid orange;
+  text-transform: uppercase;
+}
+
+#generateGames:hover
+{
+  background: darkorange;
+  border: 0.1vw solid darkorange;
+}
+
+button.accordion 
+{
+  background-color: green;
+  padding: 0.3vw; 
+  padding-left: 3vw; 
+  padding-right: 3vw;
+  float: right; 
+  color: white; 
+  border: 0.1vw solid green;
+  cursor: pointer;
+  text-align: left;
+  outline: none;
+  font-size: 1.1vw;
+}
+
+button.accordion.active,
+button.accordion:hover 
+{
+  background-color: darkgreen;
+  border: 0.1vw solid darkgreen;
+}
+
+button.small
+{
+  padding-left: 1vw; 
+  padding-right: 1vw;
+}
+
+button.sendFunds
+{
+  padding: 0.8vw; 
+  width: 100%; 
+  background: orange; 
+  border: 0.1vw solid orange;
+  cursor: pointer;
+}
+
+button.sendFunds.active,
+button.sendFunds:hover 
+{
+  background-color: darkorange;
+  border: 0.1vw solid darkorange;
+}
+
+button.accordion:after 
+{
+  content: '\002B';
+  font-weight: bold;
+  float: right;
+  margin-left: 1vw;
+}
+
+button.accordion.active:after 
+{
+  content: "\2212";
+}
+
+div.panel 
+{
+  width: 100%;
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.6s ease-in-out;
+  opacity: 0;
+  cursor: pointer;
+}
+
+div.addFunds,
+div.sendFunds
+{
+  float: left; 
+  width: 100%; 
+  text-align: center; 
+  padding-bottom: 1vw;
+  cursor: pointer;
+}
+
+div.panel.show 
+{
+  opacity: 1;
+  max-height: 20vw;
+}
+
+#dropdownOptions
+{
+  width: 10vw;
+  font-size: 1.1vw;
+  padding: 0.8vw; 
+  border: 0.1vw solid black;
+  cursor: pointer;
+}
+
+#infoContests,
+#infoPosition,
+#infoBalance,
+#infoBalance2
+{
+  font-size: 1.1vw;
+}
+
+#addDay
+{
+  width: 10vw; 
+  font-size: 1.1vw; 
+  color: green; 
+  padding: 0.8vw; 
+  border: 0.1vw solid green; 
+  background: white;
+  cursor: pointer;
+}
+
+#userFunds
+{
+  position: relative; 
+  width: 35%; 
+  float: right; 
+  padding-top: 2vw;
+  cursor: pointer;
+}
+
+.addFunds p input,
+.sendFunds p input
+{
+  border: 0.1vw solid black; 
+  padding: 0.8vw; 
+  width: 86.5%;  
+  float: left;
+  cursor: pointer;
+}
+
+.addFunds p input.save_fund
+{
+  width: 100%;
+  background: green; 
+  border: 0.1vw solid green;
+  padding: 0.3vw;
+  cursor: pointer;
+}
+
+.sendFunds p input.send_fund
+{
+  width: 100%;
+  background: orange; 
+  border: 0.1vw solid orange;
+  padding: 0.3vw;
+  cursor: pointer;
+}
+
+#contests,
+#positions,
+#teams, 
+#team1,
+#team2
+{
+  font-size: 1.1vw; 
+  width: 10vw; 
+  padding: 0.8vw; 
+  border: 0.1vw solid black;
+  cursor: pointer;
+}
+
+.save_contest
+{
+  float: left;
+}
+
+#editGame,
+#editPosition
+{
+  background-color: darkgreen;
+  padding: 0.3vw; 
+  padding-left: 1vw; 
+  padding-right: 1vw;
+  float: right; 
+  color: white; 
+  border: 0.1vw solid darkgreen;
+  cursor: pointer;
+  text-align: left;
+  outline: none;
+  font-size: 1.1vw;
+  cursor: pointer;
+}
+
+#deleteGame
+{
+  padding: 0.3vw; 
+  padding-left: 1vw; 
+  padding-right: 1vw;
+  float: right; 
+  color: white; 
+  cursor: pointer;
+  background-color: red;
+  border: 0.1vw solid red;
+  text-align: left;
+  outline: none;
+  font-size: 1.1vw;
+  cursor: pointer;
+}
+
+#deleteGame:hover
+{
+  background-color: darkred;
+  border: 0.1vw solid darkred;
+}
+
+#dropdownOptions p input 
+{
+  background: darkolivegreen;
+}
+
+/*--------------------------------------------SUBMIT FORM-----------------------------------------*/
+#intro
+{
+  float: right;
+}
+
+#lastbox #intro input
+{
+  font-size: 1vw;
+  padding: 0.8vw;
+  width: 18.2vw;
+  color: black;
+  border: 0.1vw solid white;
+  background: white;
+  cursor: pointer;
+}
+
+#lastbox #intro .submit,
+#lastbox input.submit
+{
+  float: right;
+  width: 10vw;
+  font-size: 1vw;
+  padding-top: 0.8vw;
+  padding-bottom: 0.8vw;
+  background: green; 
+  border: 0.1vw solid green;
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+#lastbox #intro .submit:hover,
+#lastbox input.submit
+{
+  color: white;
+  border: 0.1vw solid darkgreen;
+  background-color: darkgreen;
+  cursor: pointer;
+}
+
+p input,
+#intro p input
+{
+  font-size: 1.1vw;
+  padding: 0.8vw;
+  width: 18.2vw;
+  color: black;
+  border: 0.1vw solid black;
+  background: white;
+  cursor: pointer;
+}
+
+#intro .submit,
+input.submit
+{
+  float: left;
+  width: 10vw;
+  font-size: 1.1vw;
+  padding-top: 0.8vw;
+  padding-bottom: 0.8vw;
+  background: green; 
+  border: 0.1vw solid green;
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+#intro .submit:hover,
+input.submit:hover
+{
+  color: white;
+  border: 0.1vw solid darkgreen;
+  background-color: darkgreen;
+  cursor: pointer;
+}
+
+#registerButton
+{
+  text-align: center;
+  float: right;
+  font-size: 1vw;
+  width: 10vw;
+  padding-top: 0.8vw;
+  padding-bottom: 0.8vw;
+  background: white; 
+  border: 0.1vw solid white;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+#registerButton a
+{
+  color: green;
+}

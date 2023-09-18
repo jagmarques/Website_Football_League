@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="styles/layout.css" type="text/css">
+</head>
+
+<body background="images/background.jpg">
+
+    <header id="header">
+        <nav>
+            <div id="logo"><img  src="images/logo.png"></div>
+            <ul>
+                <li id="dropdown">
+                    <a id="title1">ACCOUNT</a>
+                    <div id="dropdown-content">
+                        <a id="title1" href="EditUser.html">Edit</a>
+                        <a id="title1" href="Messages.html">Messages</a>
+                        <a id="title1" href="Teams.html">Log Out</a>
+                    </div>        
+                </li>
+                <li>
+                    <a id="title1" href="AboutLogged.html">ABOUT</a>
+                </li>
+                <li>
+                    <a id="title1" href="CapTeams.html" style="background-color: black; color: white">HOME</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+                
+    <div id="container">
+        
+        <div id="firstbox">
+            <div id="firstboxText">
+                <p id="title3">Manage Team</p>
+                <p id="title1" style="padding-top: 2vw">Choose the Player:</p>
+                <p id="title1">
+                    <select id="dropdownOptions">
+                        <option value="Player1">Player1</option>
+                        <option value="Player2">Player2</option>
+                        <option value="Player3">Player3</option>
+                    </select>
+                    &nbsp&nbsp 
+                    Captain Previleges:
+                    <select id="dropdownOptions" style="width: 6vw;">
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+                </p>
+                <p id="title1">Choose the Position:</p>
+                <p><select id="dropdownOptions">
+                    <option value="Position1">Position1</option>
+                    <option value="Position2">Position2</option>
+                    <option value="Position3">Position3</option>
+                </select></p>
+
+                <p id="title1">Choose the Status:</p>
+                <p><select id="dropdownOptions">
+                    <option value="Status1">Holder</option>
+                    <option value="Status2">Alternate</option>
+                </select></p>
+                <input type="submit" class="submit save_contest" value="Save"></p>
+                <p style="padding-top: 4vw"><button id="kickoutPlayer">Quickout Player</button></p>
+
+                <p style="padding-top: 2vw" id="title1">Choose the Team Strategy:</p>
+                <p><select id="dropdownOptions">
+                    <option value="Strategy1">Strategy1</option>
+                    <option value="Strategy2">Strategy2</option>
+                    <option value="Strategy3">Strategy3</option>
+                </select></p>
+                <input type="submit" class="submit save_contest" value="Save"></p>
+
+                <p style="padding-top: 4vw" id="title1">Record Game Result:</p>
+                <p><select id="dropdownOptions">
+                    <option value="Game1">Game1</option>
+                    <option value="Game2">Game2</option>
+                    <option value="Game3">Game3</option>
+                </select></p>
+                <p id="title1" style="color: green;">
+                    Wining Team:
+                    <select id="dropdownOptions">
+                        <option value="Team1">Team1</option>
+                        <option value="Team2">Team2</option>
+                    </select>
+                    &nbsp&nbsp 
+                    Goals:
+                    <input style="width: 3vw;" type="number" name="quantity" min="1" max="100">
+                </p>
+
+                <p id="title1" style="color: red;">
+                    Losing Team:
+                    <select id="dropdownOptions">
+                        <option value="Team1">Team1</option>
+                        <option value="Team2">Team2</option>
+                    </select>
+                    &nbsp&nbsp 
+                    Goals:
+                    <input style="width: 3vw;" type="number" name="quantity" min="1" max="100">
+                </p>
+                <p><input type="submit" class="submit record_gameResult" value="Record"></p>
+                
+            </div>
+
+            <div id="goBackDiv"><a href="CapTeams.html"><button id="goBack">Go Back >></button></a></div>
+            
+        </div>
+  
+		<div id="lastbox">
+            <div id="wrapper">
+                <img id="user" src="images/user.png" alt="user" width="120">
+                <p id="title4">Username</p>
+                <p id="title4">Information</p>
+                <p>Info</p>
+                <p id="title4">Email</p>
+                <a href="mailto:****@****">****@****</a>
+                <p id="title4">Phone Number</p>
+                <p>9********</p>
+                <p id="title4">Balance</p>
+                <p>€€€</p>
+            </div>
+        </div>
+        
+    </div>
+	
+</body>
+</html>

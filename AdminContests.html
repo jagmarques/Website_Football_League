@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="styles/layout.css" type="text/css">
+</head>
+
+<body background="images/background.jpg">
+
+    <header id="header">
+        <nav>
+            <div id="logo"><img  src="images/logo.png"></div>
+            <ul>
+                <li id="dropdown">
+                    <a id="title1">ACCOUNT</a>
+                    <div id="dropdown-content">
+                        <a id="title1" href="EditUser.html">Edit</a>
+                        <a id="title1" href="Messages.html">Messages</a>
+                        <a id="title1" href="Teams.html">Log Out</a>
+                    </div>        
+                </li>
+                <li>
+                    <a id="title1" href="AboutLogged.html">ABOUT</a>
+                </li>
+                <li>
+                    <a id="title1" href="CapTeams.html" style="background-color: black; color: white">HOME</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="container">
+
+        <div id="firstbox">
+            <nav>
+                <ul>
+                    <li>
+                        <a id="title2" href="CapTeams.html">TEAMS</a>
+                    </li>
+                    <li>
+                        <a id="title2" href="CapContests.html" style="background-color: green; color: white">CONTESTS</a>
+                    </li>
+                    <li>
+                        <a id="title2" href="CapGames.html">GAMES</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div id="firstboxText">
+                <p id="title3" style="color: orange;">Pending Contests<a href="NewContest.html"><button id="createContest" style="float: right">Create Contest</button></a></p>
+                <nav id="contentTitle">
+                    Contest1
+                    <button id="beSusbstitute">Be a Substitute</button>
+                    <a href="EditContest.html"><button id="editContest">Edit Contest</button></a>
+                </nav>
+                <p id="title3" style="color: green;">Hapenning Contests</p>
+                <nav id="contentTitle">
+                    Contest2
+                    <button id="beSusbstitute">Be a Substitute</button>
+                    <button class="accordion small">Info</button>
+                    <div class="panel">
+                        <p>
+                            Contest2 info + Results
+                        </p>
+                    </div>
+                </nav>
+                <p id="title3" style="color: red;">Fineshed Contests</p>
+                <nav id="contentTitle">
+                    Contest3
+                    <button class="accordion">Info</button>
+                    <div class="panel">
+                        <p>
+                            Contest3 info + Results
+                        </p>
+                    </div>
+                </nav>
+            </div>
+
+        </div>
+
+        <div id="lastbox">
+            <div id="wrapper">
+                <img id="user" src="images/user.png" alt="user" width="120">
+                <p id="title4">Username</p>
+                <p id="title4">Information</p>
+                <p>Info</p>
+                <p id="title4">Email</p>
+                <a href="mailto:****@****">****@****</a>
+                <p id="title4">Phone Number</p>
+                <p>9********</p>
+                <p id="title4">Balance</p>
+                <p>€€€</p>
+            </div>
+        </div>
+
+    </div>
+
+	<script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+    
+        for (i = 0; i < acc.length; i++) 
+        {
+            acc[i].onclick = function()
+            {
+                this.classList.toggle("active");
+                this.nextElementSibling.classList.toggle("show");
+            }
+        }
+    </script>
+
+</body>
+</html>

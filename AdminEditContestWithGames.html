@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="styles/layout.css" type="text/css">
+</head>
+
+<body background="images/background.jpg">
+
+    <header id="header">
+        <nav>
+            <div id="logo"><img  src="images/logo.png"></div>
+            <ul>
+                <li id="dropdown">
+                    <a id="title1">ACCOUNT</a>
+                    <div id="dropdown-content">
+                        <a id="title1" href="EditUser.html">Edit</a>
+                        <a id="title1" href="Messages.html">Messages</a>
+                        <a id="title1" href="Teams.html">Log Out</a>
+                    </div>        
+                </li>
+                <li>
+                    <a id="title1" href="AboutLogged.html">ABOUT</a>
+                </li>
+                <li>
+                    <a id="title1" href="CapTeams.html" style="background-color: black; color: white">HOME</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="container">
+        
+        <div id="firstbox">
+
+            <div id="firstboxText">
+                <p id="title3" style="padding-bottom: 1.1vw;">Edit Contest</p>
+                <p id="title1">Name:</p>
+                <p><input type="tex" placeholder="Name" name="name"></p>
+                <p id="title1">Location:</p>
+                <p><input type="text" placeholder="Location" name="location" required></p>
+                <p id="title1">Date:</p>
+                <p><input type="Date" placeholder="Date" name="date" required></p>
+                <p id="title1">Until:</p>
+                <p><input type="Date" placeholder="Date" name="date" required></p>
+                <p id="title1">Games:</p>
+                <p>
+                    <nav id="contentTitle" style="padding: 0vw; font-size: 1vw;">
+                        Game1
+                        <button id="deleteGame">Delete</button>
+                        <a href="EditGame.html"><button id="editGame">Edit Game</button></a>
+                        <button class="accordion small">Info</button>
+                        <div class="panel">
+                            <p>
+                                Game1 info 
+                            </p>
+                        </div>
+                    </nav>
+                </p>
+                <p>
+                    <nav id="contentTitle" style="padding: 0vw; font-size: 1vw;"> 
+                        Game2
+                        <button id="deleteGame">Delete</button>
+                        <a href="EditGame.html"><button id="editGame">Edit Game</button></a>
+                        <button class="accordion small">Info</button>
+                        <div class="panel">
+                            <p>
+                                Game2 info 
+                            </p>
+                        </div>
+                    </nav>
+                </p>
+                <p><input type="submit" class="submit save_contest" value="Save"></p>
+            </div>
+
+            <div id="goBackDiv"><a href="ManContests.html"><button id="goBack">Go Back >></button></a></div>
+
+        </div>
+
+        <div id="lastbox">
+                <div id="wrapper">
+                    <img id="user" src="images/user.png" alt="user" width="120">
+                    <p id="title4">Username</p>
+                    <p id="title4">Information</p>
+                    <p>Info</p>
+                    <p id="title4">Email</p>
+                    <a href="mailto:****@****">****@****</a>
+                    <p id="title4">Phone Number</p>
+                    <p>9********</p>
+                    <p id="title4">Balance</p>
+                    <p>€€€</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
