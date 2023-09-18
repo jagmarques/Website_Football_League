@@ -1,7 +1,7 @@
 # Website_Football_League
 Web app for a football league. Users can create teams, join contests, play games, and request substitutes. It uses HTML, CSS, Javascript, PHP and MySQL. It has different screens and features for users, captains, managers and admins
 
-Screens Description:
+Screens description:
 Before login: For a user who has not logged in, the home screen (index.php) shows the teams that exist in the database and the vacant positions in those teams. The user can also see the contests that exist and the games. The user can also register in the system on a page for that purpose that contains instructions for the user to navigate the system. There is also an About page that contains information about the project that was developed. After login: User: If the user who logged in only has basic permissions, then he/she has access to the following elements:
 - Teams: list of teams that exist in the database, with a distinction on the page of their teams and those that are not yet registered. On the teams page you can also create a team and view information about your teams.
 - Contests: list of contests that exist, having the option to choose to be a substitute in any of them and view the information of each one.
